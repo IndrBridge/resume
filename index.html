@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Tiwari - Entrepreneur & Tech Innovator</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+            <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+            <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+            <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+            <li><a href="#skills"><i class="fas fa-tools"></i> Skills</a></li>
+            <li><a href="#achievements"><i class="fas fa-trophy"></i> Achievements</a></li>
+            <li><a href="#interests"><i class="fas fa-heart"></i> Interests</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-container">
+                <img src="assets/profile.jpg" alt="Aditya Tiwari" class="profile-photo">
+            </div>
+            <h1 class="glow">Aditya Tiwari</h1>
+            <p><i class="fas fa-laptop-code"></i> Entrepreneur | Marketing Innovator | AI & Tech Visionary</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary glass-card"><i class="fas fa-code-branch"></i> View Projects</a>
+                <a href="#contact" class="btn secondary glass-card"><i class="fas fa-envelope"></i> Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about glass-card">
+        <h2 class="section-title"><i class="fas fa-user-circle"></i> About Me</h2>
+        <div class="about-content">
+            <p><i class="fas fa-birthday-cake"></i> Age: <span id="age"></span> years</p>
+            <p>Dynamic entrepreneur and innovator with a unique blend of marketing expertise, AI development, and creative storytelling. Led the development of transformative AI-powered tools, including a productivity assistant for email task automation and marketing automation engines like AUTOPIA. Recognized for delivering high-impact solutions in retail, transportation, and creative industries. Known for blending technical depth, strategic thinking, and artistic vision to create scalable, future-ready solutions.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2 class="section-title"><i class="fas fa-project-diagram"></i> Key Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card glass-card float" data-category="ai">
+                <div class="project-content">
+                    <h3><i class="fas fa-code-branch"></i> Gmail Productivity Assistant</h3>
+                    <p>Chrome extension and FastAPI-powered backend for automating email task extraction. Integrated OpenAI GPT models for task prioritization and reply generation.</p>
+                    <ul class="project-details">
+                        <li><i class="fas fa-check-circle"></i> Achieved MVP development in 72 hours with 26 API endpoints</li>
+                        <li><i class="fas fa-check-circle"></i> 100% endpoint testing coverage</li>
+                        <li><i class="fas fa-check-circle"></i> 2.4 features/hour implementation rate</li>
+                        <li><i class="fas fa-check-circle"></i> Enhanced NLP accuracy for task extraction</li>
+                    </ul>
+                    <div class="project-tech">Python • FastAPI • OpenAI GPT • Chrome Extension</div>
+                </div>
+            </div>
+            <div class="project-card glass-card float" data-category="ai">
+                <div class="project-content">
+                    <h3><i class="fas fa-code-branch"></i> AUTOPIA</h3>
+                    <p>AI-driven marketing automation tool integrating lead segmentation and WhatsApp API for follow-ups. Revolutionizing marketing strategies through intelligent automation.</p>
+                    <div class="project-tech">AI • Marketing Automation • WhatsApp API</div>
+                </div>
+            </div>
+            <div class="project-card glass-card float" data-category="ai">
+                <div class="project-content">
+                    <h3><i class="fas fa-code-branch"></i> Driver Fatigue Monitoring System</h3>
+                    <p>Developed real-time fatigue detection system deployed in 700+ vehicles across India. Enhanced transportation safety through AI-powered monitoring.</p>
+                    <div class="project-tech">Computer Vision • Real-time Processing • Safety Systems</div>
+                </div>
+            </div>
+            <div class="project-card glass-card float" data-category="ai">
+                <div class="project-content">
+                    <h3><i class="fas fa-code-branch"></i> Cypher AI</h3>
+                    <p>Hip-hop analysis app tailored for Indian rappers, combining AI-based multilingual freestyle evaluation with plans for global scalability.</p>
+                    <div class="project-tech">NLP • Audio Processing • Multilingual AI</div>
+                </div>
+            </div>
+            <div class="project-card glass-card float" data-category="ai">
+                <div class="project-content">
+                    <h3><i class="fas fa-code-branch"></i> Spatially Aware AI</h3>
+                    <p>Retail optimization tool using CCTV for employee activity tracking and store layout analysis.</p>
+                    <div class="project-tech">Computer Vision • Retail Analytics • Spatial Analysis</div>
+                </div>
+            </div>
+            <div class="project-card glass-card float">
+                <div class="project-content">
+                    <h3><i class="fas fa-globe"></i> Full-Stack Web Applications</h3>
+                    <p>Developed modern web applications using Next.js, Node.js, and Google Cloud Platform.</p>
+                    <ul class="project-details">
+                        <li><i class="fas fa-check-circle"></i> Built scalable microservices architecture</li>
+                        <li><i class="fas fa-check-circle"></i> Implemented containerized deployments with Docker</li>
+                        <li><i class="fas fa-check-circle"></i> Integrated cloud services and APIs</li>
+                        <li><i class="fas fa-check-circle"></i> Optimized performance and SEO</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span class="tech-tag"><i class="fab fa-react"></i> Next.js</span>
+                        <span class="tech-tag"><i class="fab fa-node-js"></i> Node.js</span>
+                        <span class="tech-tag"><i class="fab fa-docker"></i> Docker</span>
+                        <span class="tech-tag"><i class="fas fa-cloud"></i> GCP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <h2 class="section-title"><i class="fas fa-history"></i> Professional Experience</h2>
+        <div class="experience-timeline">
+            <div class="experience-item glass-card">
+                <h3><i class="fas fa-building"></i> Founder & CEO</h3>
+                <h4><i class="fas fa-user-tie"></i> IndrBridge – Intelligent Marketing Consulting Firm</h4>
+                <p class="date"><i class="far fa-calendar-alt"></i> 2024 – Present</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Created IndrBridge to revolutionize marketing strategies using AI-powered solutions</li>
+                    <li><i class="fas fa-check-circle"></i> Developed AUTOPIA, a marketing engine that automates lead segmentation and campaign execution</li>
+                    <li><i class="fas fa-check-circle"></i> Delivered custom AI tools for task management, email analysis, and customer engagement</li>
+                </ul>
+            </div>
+            <div class="experience-item glass-card">
+                <h3><i class="fas fa-code-branch"></i> Developer – Gmail Productivity Assistant MVP</h3>
+                <h4><i class="fas fa-user-tie"></i> Independent Project</h4>
+                <p class="date"><i class="far fa-calendar-alt"></i> 2024</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Designed Chrome extension with FastAPI backend for email task automation</li>
+                    <li><i class="fas fa-check-circle"></i> Built OpenAI GPT system for email summarization and task extraction</li>
+                    <li><i class="fas fa-check-circle"></i> Achieved 100% endpoint testing coverage and rapid development milestones</li>
+                </ul>
+            </div>
+            <div class="experience-item glass-card">
+                <h3><i class="fas fa-user-tie"></i> Marketing Director</h3>
+                <h4><i class="fas fa-building"></i> Ashley Furniture HomeStore, Jamshedpur</h4>
+                <p class="date"><i class="far fa-calendar-alt"></i> August 2023 – Present</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Pioneered marketing strategies driving 17% conversion rate in luxury retail</li>
+                    <li><i class="fas fa-check-circle"></i> Built collaborations with BMW, Porsche, and Rotary Club</li>
+                </ul>
+            </div>
+            <div class="experience-item glass-card">
+                <h3><i class="fas fa-code-branch"></i> Lead Software Developer & Director</h3>
+                <h4><i class="fas fa-building"></i> Goat AI Private Limited</h4>
+                <p class="date"><i class="far fa-calendar-alt"></i> 2022 – 2024</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Directed development of driver fatigue monitoring systems for 700+ vehicles</li>
+                    <li><i class="fas fa-check-circle"></i> Designed AI tools for crowd behavior analysis and workplace safety</li>
+                </ul>
+            </div>
+            <div class="experience-item glass-card">
+                <h3><i class="fas fa-user-tie"></i> Founder & Creative Lead</h3>
+                <h4><i class="fas fa-music"></i> Exkzit – Music & Creative Ventures</h4>
+                <p class="date"><i class="far fa-calendar-alt"></i> 2013 – Present</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Produced music and visual content blending storytelling with technology</li>
+                    <li><i class="fas fa-check-circle"></i> Performed as stage name Exkzit in various venues and competitions</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
+        <div class="education-content">
+            <div class="education-item glass-card">
+                <h3><i class="fas fa-university"></i> University of Colorado Boulder</h3>
+                <h4><i class="fas fa-book"></i> Computer Science & Music (Incomplete)</h4>
+                <p>Dropped out due to financial challenges caused by the COVID-19 pandemic</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2 class="section-title"><i class="fas fa-laptop-code"></i> Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category glass-card float">
+                <h3><i class="fas fa-chart-line"></i> Marketing</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Brand Strategy</li>
+                    <li><i class="fas fa-check-circle"></i> Influencer Marketing</li>
+                    <li><i class="fas fa-check-circle"></i> Lead Generation</li>
+                    <li><i class="fas fa-check-circle"></i> Campaign Automation</li>
+                </ul>
+            </div>
+            <div class="skill-category glass-card float">
+                <h3><i class="fas fa-code"></i> Technical</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Python</li>
+                    <li><i class="fas fa-check-circle"></i> FastAPI</li>
+                    <li><i class="fas fa-check-circle"></i> OpenAI APIs</li>
+                    <li><i class="fas fa-check-circle"></i> Google Apps Script</li>
+                    <li><i class="fas fa-check-circle"></i> Flask</li>
+                    <li><i class="fas fa-check-circle"></i> WindSurf IDE</li>
+                </ul>
+            </div>
+            <div class="skill-category glass-card float">
+                <h3><i class="fas fa-robot"></i> AI & Automation</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Task Extraction</li>
+                    <li><i class="fas fa-check-circle"></i> Marketing Automation</li>
+                    <li><i class="fas fa-check-circle"></i> NLP-driven Tools</li>
+                    <li><i class="fas fa-check-circle"></i> AI Safety Systems</li>
+                </ul>
+            </div>
+            <div class="skill-category glass-card float">
+                <h3><i class="fas fa-palette"></i> Creative</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Music Production</li>
+                    <li><i class="fas fa-check-circle"></i> Storytelling</li>
+                    <li><i class="fas fa-check-circle"></i> Video Content Creation</li>
+                    <li><i class="fas fa-check-circle"></i> Event Management</li>
+                </ul>
+            </div>
+            <div class="skill-category glass-card float">
+                <h3><i class="fas fa-code"></i> Full-Stack Development</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Next.js & React</li>
+                    <li><i class="fas fa-check-circle"></i> Node.js & Express</li>
+                    <li><i class="fas fa-check-circle"></i> RESTful APIs</li>
+                    <li><i class="fas fa-check-circle"></i> TypeScript</li>
+                    <li><i class="fas fa-check-circle"></i> MongoDB & SQL</li>
+                </ul>
+            </div>
+            <div class="skill-category glass-card float">
+                <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Google Cloud Platform</li>
+                    <li><i class="fas fa-check-circle"></i> Docker Containerization</li>
+                    <li><i class="fas fa-check-circle"></i> CI/CD Pipelines</li>
+                    <li><i class="fas fa-check-circle"></i> Cloud Functions</li>
+                    <li><i class="fas fa-check-circle"></i> Kubernetes</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="achievements">
+        <h2 class="section-title"><i class="fas fa-trophy"></i> Achievements</h2>
+        <div class="achievements-content">
+            <ul class="achievement-list">
+                <li class="glass-card"><i class="fas fa-check-circle"></i> Delivered Gmail productivity tool 7x faster than industry benchmarks</li>
+                <li class="glass-card"><i class="fas fa-check-circle"></i> Developed scalable AI solutions for retail and transportation industries</li>
+                <li class="glass-card"><i class="fas fa-check-circle"></i> Organized luxury marketing events with brands like BMW and Porsche</li>
+                <li class="glass-card"><i class="fas fa-check-circle"></i> Recognized in Indian hip-hop competitions</li>
+                <li class="glass-card"><i class="fas fa-check-circle"></i> Acted in a Bollywood film</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="interests" class="interests">
+        <h2 class="section-title"><i class="fas fa-heart"></i> Interests</h2>
+        <div class="interests-content">
+            <ul class="interests-list">
+                <li class="glass-card float"><i class="fas fa-robot"></i> AI-driven productivity tools for marketing and retail optimization</li>
+                <li class="glass-card float"><i class="fas fa-rocket"></i> Space exploration, quantum computing, and faster-than-light systems</li>
+                <li class="glass-card float"><i class="fas fa-music"></i> Music production and community engagement through storytelling</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title"><i class="fas fa-paper-plane"></i> Get in Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <a href="mailto:aditya.tiwari.jsr@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>aditya.tiwari.jsr@gmail.com</span>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="https://wa.me/919263012576" class="contact-link" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>+91 9263012576</span>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="https://www.linkedin.com/in/aditya-tiwari-57a917215" class="contact-link" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn Profile</span>
+                    </a>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="mailto:aditya.tiwari.jsr@gmail.com" class="social-link" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://wa.me/919263012576" class="social-link" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/aditya-tiwari-57a917215" class="social-link" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Aditya Tiwari. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

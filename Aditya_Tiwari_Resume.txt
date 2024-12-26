@@ -1,0 +1,79 @@
+
+Aditya Tiwari
+Entrepreneur | Marketing Innovator | AI & Tech Visionary
+[LinkedIn Profile] | [Portfolio/Personal Website] | [Contact Info]
+
+Professional Summary
+Dynamic entrepreneur and innovator with a unique blend of marketing expertise, AI development, and creative storytelling. Led the development of transformative AI-powered tools, including a productivity assistant for email task automation and marketing automation engines like AUTOPIA. Recognized for delivering high-impact solutions in retail, transportation, and creative industries. Known for blending technical depth, strategic thinking, and artistic vision to create scalable, future-ready solutions.
+
+Professional Experience
+Founder & CEO
+IndrBridge – Intelligent Marketing Consulting Firm
+2024 – Present
+- Created IndrBridge to revolutionize marketing strategies using AI-powered solutions.
+- Developed AUTOPIA, a marketing engine that automates lead segmentation, personalized follow-ups, and campaign execution.
+- Delivered custom AI tools for task management, email analysis, and customer engagement for retail clients.
+
+Developer – Gmail Productivity Assistant MVP
+Independent Project (2024)
+- Designed a Chrome extension integrated with FastAPI backend to automate email task extraction and follow-up suggestions.
+- Built a system using OpenAI GPT for summarizing emails and extracting actionable tasks.
+- Achieved rapid development milestones: 100% endpoint testing coverage, 2.4 features/hour implementation rate, and modular architecture for scalability.
+- Enhanced NLP accuracy for task extraction and reply suggestions to boost user productivity.
+
+Marketing Director
+Ashley Furniture HomeStore, Jamshedpur
+August 2023 – Present
+- Pioneered marketing strategies that drove a 17% conversion rate in the competitive luxury retail market.
+- Built a loyal customer base through collaborations with high-end brands like BMW, Porsche, and Rotary Club.
+
+Lead Software Developer & Director
+Goat AI Private Limited
+2022 – 2024
+- Directed the development of driver fatigue monitoring systems deployed in 700+ vehicles across India.
+- Designed AI tools for crowd behavior analysis and workplace safety automation.
+
+Founder & Creative Lead
+Exkzit – Music & Creative Ventures
+2013 – Present
+- Produced music and visual content blending storytelling with technology, under the stage name Exkzit.
+
+Key Projects
+Gmail Productivity Assistant
+- Chrome extension and FastAPI-powered backend for automating email task extraction.
+- Integrated OpenAI GPT models for task prioritization and reply generation.
+- Achieved MVP development in 72 hours with 26 API endpoints and comprehensive testing.
+
+AUTOPIA
+- AI-driven marketing automation tool integrating lead segmentation and WhatsApp API for follow-ups.
+
+Spatially Aware AI
+- Built a retail optimization tool using CCTV for employee activity tracking and store layout analysis.
+
+Driver Fatigue Monitoring System
+- Developed real-time fatigue detection integrated into vehicles for fleet safety.
+
+Cypher AI
+- Hip-hop analysis app tailored for Indian rappers, combining AI-based multilingual freestyle evaluation with plans for global scalability.
+
+Skills
+- Marketing: Brand strategy, influencer marketing, lead generation, and campaign automation.
+- Technical: Python, FastAPI, OpenAI APIs, Google Apps Script, Flask, WindSurf IDE.
+- AI & Automation: Task extraction, marketing automation, NLP-driven tools, and AI for safety systems.
+- Creative: Music production, storytelling, video content creation, and event management.
+
+Education
+University of Colorado Boulder
+Computer Science & Music (Incomplete)
+- Dropped out due to financial challenges caused by the COVID-19 pandemic.
+
+Achievements
+- Delivered a Gmail productivity tool 7x faster than industry benchmarks, exceeding senior developer standards in velocity and quality.
+- Developed scalable AI solutions for retail and transportation industries.
+- Organized luxury marketing events with brands like BMW and Porsche, earning recognition in high-net-worth circles.
+- Recognized in Indian hip-hop competitions and acted in a Bollywood film.
+
+Interests
+- AI-driven productivity tools for marketing and retail optimization.
+- Space exploration, quantum computing, and faster-than-light systems.
+- Music production and community engagement through storytelling.
