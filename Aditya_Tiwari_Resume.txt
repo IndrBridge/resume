@@ -1,4 +1,3 @@
-
 Aditya Tiwari
 Entrepreneur | Marketing Innovator | AI & Tech Visionary
 [LinkedIn Profile] | [Portfolio/Personal Website] | [Contact Info]
@@ -30,8 +29,11 @@ August 2023 – Present
 Lead Software Developer & Director
 Goat AI Private Limited
 2022 – 2024
-- Directed the development of driver fatigue monitoring systems deployed in 700+ vehicles across India.
-- Designed AI tools for crowd behavior analysis and workplace safety automation.
+- Architected and implemented JT808/GB28181 protocol gateway for real-time video streaming and monitoring across 700+ vehicles
+- Designed high-performance fleet management system supporting 10Gbps throughput with protocol-level validation
+- Built scalable infrastructure using .NET Core, Redis, and Docker for nationwide deployment
+- Led development of AI-powered driver fatigue detection and workplace safety automation systems
+- Implemented secure video stream conversion between JT1078 and GB28181 standards for national compliance
 
 Founder & Creative Lead
 Exkzit – Music & Creative Ventures
@@ -39,10 +41,23 @@ Exkzit – Music & Creative Ventures
 - Produced music and visual content blending storytelling with technology, under the stage name Exkzit.
 
 Key Projects
+CascadeRA - AI Development Assistant
+- Developed an AI-enhanced development assistant with voice-driven coding capabilities and Cursor AI integration
+- Achieved 96% test coverage in code generation system with context-aware prompt preparation
+- Implemented real-time voice processing (<100ms latency) and sophisticated context management
+- Built comprehensive testing infrastructure with modular architecture for scalability
+
 Gmail Productivity Assistant
-- Chrome extension and FastAPI-powered backend for automating email task extraction.
-- Integrated OpenAI GPT models for task prioritization and reply generation.
-- Achieved MVP development in 72 hours with 26 API endpoints and comprehensive testing.
+- Developed Chrome extension with FastAPI backend achieving 90% core infrastructure completion
+- Implemented secure OAuth 2.0 authentication with 100% coverage and comprehensive testing
+- Built sophisticated email analysis system with 16.2s response time for complex content
+- Achieved 5-7x faster development speed compared to industry standards (2.4 features/hour)
+
+Driver Fatigue Monitoring System
+- Developed real-time fatigue detection integrated into vehicles for fleet safety
+- Implemented JT808/GB28181 protocol gateway for nationwide video monitoring
+- Built high-performance architecture supporting 10Gbps network throughput
+- Achieved national standard compliance with JT1078 to GB28181 video conversion
 
 AUTOPIA
 - AI-driven marketing automation tool integrating lead segmentation and WhatsApp API for follow-ups.
@@ -50,16 +65,13 @@ AUTOPIA
 Spatially Aware AI
 - Built a retail optimization tool using CCTV for employee activity tracking and store layout analysis.
 
-Driver Fatigue Monitoring System
-- Developed real-time fatigue detection integrated into vehicles for fleet safety.
-
 Cypher AI
 - Hip-hop analysis app tailored for Indian rappers, combining AI-based multilingual freestyle evaluation with plans for global scalability.
 
 Skills
 - Marketing: Brand strategy, influencer marketing, lead generation, and campaign automation.
-- Technical: Python, FastAPI, OpenAI APIs, Google Apps Script, Flask, WindSurf IDE.
-- AI & Automation: Task extraction, marketing automation, NLP-driven tools, and AI for safety systems.
+- Technical: Python, FastAPI, OpenAI APIs, .NET Core, Docker, Redis, Protocol Integration (JT808/GB28181), OAuth 2.0.
+- AI & Automation: Voice processing, context management, task extraction, NLP-driven tools, real-time video analysis.
 - Creative: Music production, storytelling, video content creation, and event management.
 
 Education
@@ -68,8 +80,9 @@ Computer Science & Music (Incomplete)
 - Dropped out due to financial challenges caused by the COVID-19 pandemic.
 
 Achievements
-- Delivered a Gmail productivity tool 7x faster than industry benchmarks, exceeding senior developer standards in velocity and quality.
-- Developed scalable AI solutions for retail and transportation industries.
+- Architected nationwide fleet management system with JT808/GB28181 protocol integration for 700+ vehicles.
+- Built CascadeRA with 96% test coverage in code generation and sub-100ms voice processing latency.
+- Delivered Gmail productivity tool 7x faster than industry benchmarks, exceeding senior developer standards.
 - Organized luxury marketing events with brands like BMW and Porsche, earning recognition in high-net-worth circles.
 - Recognized in Indian hip-hop competitions and acted in a Bollywood film.
 

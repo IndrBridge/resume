@@ -1,0 +1,279 @@
+# JT808GW Deployment Guide
+
+## 1. System Requirements
+
+### Hardware Requirements
+1. Minimum Specifications:
+   - CPU: 4 cores
+   - RAM: 8GB
+   - Storage: 100GB SSD
+   - Network: 1Gbps
+
+2. Recommended Specifications:
+   - CPU: 8+ cores
+   - RAM: 16GB+
+   - Storage: 500GB SSD
+   - Network: 10Gbps
+
+### Software Requirements
+1. Operating System:
+   - Windows Server 2019+
+   - Linux (Ubuntu 20.04+)
+   - Docker support
+
+2. Dependencies:
+   - .NET Core 3.1 SDK
+   - Redis 6.0+
+   - Docker Engine 20.10+
+   - Nginx (optional)
+
+## 2. Installation Steps
+
+### Environment Setup
+1. Base System:
+   ```bash
+   # Update system
+   sudo apt update && sudo apt upgrade -y
+   
+   # Install .NET Core
+   wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb
+   sudo dpkg -i packages-microsoft-prod.deb
+   sudo apt update
+   sudo apt install -y dotnet-sdk-3.1
+   
+   # Install Redis
+   sudo apt install redis-server
+   ```
+
+2. Docker Setup:
+   ```bash
+   # Install Docker
+   curl -fsSL https://get.docker.com -o get-docker.sh
+   sudo sh get-docker.sh
+   
+   # Start Docker service
+   sudo systemctl enable docker
+   sudo systemctl start docker
+   ```
+
+### Application Deployment
+
+1. Docker Deployment:
+   ```bash
+   # Build images
+   docker build -t jt808gw -f Dockerfile .
+   
+   # Run containers
+   docker run -d \
+     --name jt808gw \
+     -p 9300:9300 \
+     -p 9301:9301/udp \
+     -v /data/logs:/app/logs \
+     jt808gw
+   ```
+
+2. Manual Deployment:
+   ```bash
+   # Build solution
+   dotnet restore
+   dotnet build
+   
+   # Run applications
+   dotnet run --project 808GW
+   dotnet run --project JTServer
+   ```
+
+## 3. Configuration Setup
+
+### Application Configuration
+1. appsettings.json:
+   ```json
+   {
+     "Logging": {
+       "LogLevel": {
+         "Default": "Information"
+       }
+     },
+     "AllowedHosts": "*",
+     "Redis": {
+       "ConnectionString": "localhost:6379"
+     }
+   }
+   ```
+
+2. log4.config:
+   ```xml
+   <log4net>
+     <appender name="FileAppender">
+       <file value="logs/app.log" />
+       <appendToFile value="true" />
+       <rollingStyle value="Date" />
+     </appender>
+   </log4net>
+   ```
+
+### Network Configuration
+1. Firewall Rules:
+   ```bash
+   # Allow JT808 ports
+   sudo ufw allow 9300/tcp
+   sudo ufw allow 9301/udp
+   
+   # Allow web interface
+   sudo ufw allow 80/tcp
+   sudo ufw allow 443/tcp
+   ```
+
+2. Load Balancer (Optional):
+   ```nginx
+   upstream jt808gw {
+     server 127.0.0.1:9300;
+   }
+   
+   server {
+     listen 80;
+     server_name gateway.example.com;
+     
+     location / {
+       proxy_pass http://jt808gw;
+     }
+   }
+   ```
+
+## 4. Security Setup
+
+### SSL/TLS Configuration
+1. Certificate Installation:
+   ```bash
+   # Generate self-signed certificate
+   openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
+     -keyout private.key -out certificate.crt
+   ```
+
+2. Redis Security:
+   ```bash
+   # Set Redis password
+   echo "requirepass your_password" >> /etc/redis/redis.conf
+   sudo systemctl restart redis
+   ```
+
+### Access Control
+1. Firewall Configuration:
+   ```bash
+   # Restrict Redis access
+   sudo ufw deny 6379
+   
+   # Allow only necessary ports
+   sudo ufw default deny incoming
+   sudo ufw default allow outgoing
+   ```
+
+## 5. Monitoring Setup
+
+### Log Configuration
+1. Log Rotation:
+   ```bash
+   # Configure logrotate
+   sudo nano /etc/logrotate.d/jt808gw
+   
+   /var/log/jt808gw/*.log {
+     daily
+     rotate 7
+     compress
+     delaycompress
+     missingok
+     notifempty
+   }
+   ```
+
+2. Monitoring Tools:
+   ```bash
+   # Install monitoring tools
+   sudo apt install -y prometheus node-exporter
+   
+   # Configure Prometheus
+   sudo nano /etc/prometheus/prometheus.yml
+   ```
+
+## 6. Backup Configuration
+
+### Data Backup
+1. Redis Backup:
+   ```bash
+   # Configure Redis persistence
+   echo "save 900 1" >> /etc/redis/redis.conf
+   echo "save 300 10" >> /etc/redis/redis.conf
+   echo "save 60 10000" >> /etc/redis/redis.conf
+   ```
+
+2. Log Backup:
+   ```bash
+   # Create backup script
+   sudo nano /usr/local/bin/backup-logs.sh
+   
+   #!/bin/bash
+   tar -czf /backup/logs-$(date +%Y%m%d).tar.gz /var/log/jt808gw/
+   ```
+
+## 7. Scaling Configuration
+
+### Horizontal Scaling
+1. Load Balancer Setup:
+   ```nginx
+   upstream jt808gw_cluster {
+     server 192.168.1.10:9300;
+     server 192.168.1.11:9300;
+     server 192.168.1.12:9300;
+   }
+   ```
+
+2. Redis Cluster:
+   ```bash
+   # Configure Redis cluster
+   redis-cli --cluster create \
+     127.0.0.1:7000 127.0.0.1:7001 \
+     127.0.0.1:7002 127.0.0.1:7003 \
+     127.0.0.1:7004 127.0.0.1:7005
+   ```
+
+## 8. Maintenance Procedures
+
+### Regular Maintenance
+1. Log Cleanup:
+   ```bash
+   # Clean old logs
+   find /var/log/jt808gw -type f -mtime +30 -delete
+   ```
+
+2. Performance Monitoring:
+   ```bash
+   # Check system resources
+   htop
+   
+   # Monitor network
+   iftop
+   
+   # Check disk usage
+   df -h
+   ```
+
+### Troubleshooting
+1. Service Recovery:
+   ```bash
+   # Restart services
+   sudo systemctl restart jt808gw
+   sudo systemctl restart redis
+   
+   # Check logs
+   tail -f /var/log/jt808gw/app.log
+   ```
+
+2. Backup Recovery:
+   ```bash
+   # Restore Redis backup
+   redis-cli FLUSHALL
+   redis-cli -c < dump.rdb
+   
+   # Restore logs
+   tar -xzf logs-backup.tar.gz -C /var/log/jt808gw/
+   ``` 

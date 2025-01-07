@@ -1,0 +1,16 @@
+basically cloud is connected to have a jt808 gateway which communicates with remote device
+so wehn the intercom button is pressed, jt808 gateway sends a message 9101 to the jt808 remote device
+The messae contains ip and port numbe ron which rtbvs server is running
+so Jt 808 remote device, starts streaming, video or establishes 2 way communication between
+remote device and rtvs server
+
+uI -> jt808 gateway, in this screen only iw ant to create an audio.video uI
+as soon a s i click intercom button, opens a new pop up window with audio and video
+
+
+this is for vehicle communication from base station for 2 way audio and video stream
+
+
+
+
+

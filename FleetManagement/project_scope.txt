@@ -1,0 +1,184 @@
+# JT808GW Project Scope
+
+## 1. Project Overview
+
+### Current Status
+- Demonstration gateway for RTVS integration
+- NOT intended as a full-featured production gateway
+- Focus on protocol-level implementation and basic gateway logic
+
+### Primary Purpose
+- Demonstrate integration between JT808 and GB28181 protocols
+- Showcase RTVS video streaming capabilities
+- Provide reference implementation for protocol conversion
+
+## 2. Implemented Features
+
+### Core Gateway Functions
+1. Protocol Level Access:
+   - Basic command handling
+   - Packet splitting
+   - Message validation
+   - Protocol response handling
+
+2. Video Streaming:
+   - JT1078 to GB28181 video stream conversion
+   - Real-time video viewing support
+   - Integration with national standard platforms
+
+3. Protocol Conversion:
+   - JT808 (部标) to GB28181 (国标) signal conversion
+   - SIP client implementation
+   - Signal routing and handling
+
+### Integration Points
+1. RTVS Integration:
+   - Video stream handling
+   - Protocol conversion support
+   - Real-time viewing capabilities
+
+2. GB28181 Platform Support:
+   - Standard compliance
+   - Signal conversion
+   - Platform compatibility
+
+## 3. Current Limitations
+
+### Data Persistence
+- No permanent data storage
+- Protocol-level responses only
+- No historical data retention
+- No state management beyond session
+
+### Business Logic
+- Limited to RTVS-related processing
+- No additional business logic implementation
+- Basic protocol handling only
+
+### User Interface
+- Minimal interface implementation
+- Limited monitoring capabilities
+- Basic operational controls
+
+## 4. Planned Enhancements (TODO)
+
+### Data Management
+1. Storage Implementation:
+   - Redis for recent data
+   - Local file storage for historical data
+   - Data persistence logic
+
+2. Data Transfer Service:
+   - Database integration
+   - Kafka implementation
+   - File-based transfer system
+
+### User Interface
+1. Vehicle Monitoring:
+   - Position tracking
+   - Real-time location display
+   - Vehicle status monitoring
+
+2. Historical Data:
+   - Trajectory playback
+   - Historical route visualization
+   - Timeline-based replay
+
+### Performance Improvements
+1. Core Libraries:
+   - Parser optimization
+   - Performance enhancements
+   - Code efficiency improvements
+
+2. System Optimization:
+   - Resource usage optimization
+   - Processing efficiency
+   - Response time improvements
+
+## 5. Related Projects
+
+### RTVS
+- Main integration target
+- Video stream handling
+- Protocol support
+- Links:
+  * https://github.com/vanjoge/RTVS
+  * https://gitee.com/vanjoge/RTVS
+
+### gbSip
+- GB28181 gateway implementation
+- SIP signaling support
+- RTVS interface integration
+- Links:
+  * https://github.com/vanjoge/gbSip
+  * https://gitee.com/vanjoge/gbSip
+
+## 6. Development Considerations
+
+### Production Usage
+- Current version not production-ready
+- Requires additional implementation for production use
+- Need to implement business logic
+- Data persistence required
+
+### Integration Requirements
+1. RTVS Integration:
+   - Protocol compatibility
+   - Stream handling
+   - Signal processing
+
+2. Platform Compatibility:
+   - GB28181 compliance
+   - Protocol conversion
+   - Standard adherence
+
+### Support
+- Community support available
+- QQ Group: 614308923
+- GitHub/Gitee repositories
+- Documentation and examples
+
+## 7. Implementation Guidelines
+
+### Core Focus Areas
+1. Protocol Handling:
+   - Maintain protocol compliance
+   - Ensure message validation
+   - Handle packet management
+
+2. Integration:
+   - Follow RTVS specifications
+   - Maintain GB28181 compliance
+   - Ensure signal compatibility
+
+3. Performance:
+   - Optimize for streaming
+   - Manage resource usage
+   - Handle concurrent connections
+
+### Development Priorities
+1. Essential Features:
+   - Protocol conversion
+   - Stream handling
+   - Basic gateway functions
+
+2. Optional Enhancements:
+   - Data persistence
+   - UI improvements
+   - Performance optimization
+
+## 8. Project Boundaries
+
+### In Scope
+- Protocol level gateway functions
+- Basic command handling
+- Video stream conversion
+- RTVS integration
+- GB28181 compatibility
+
+### Out of Scope
+- Production-level features
+- Complex business logic
+- Advanced data analytics
+- Custom protocol extensions
+- Extended monitoring capabilities 
